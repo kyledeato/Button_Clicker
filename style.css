@@ -2,6 +2,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
 }
 
 .display-flex {
@@ -16,12 +17,26 @@
     align-items: center;
 }
 
+/* navbar */
+nav {
+    margin: 0px 40px;
+    padding: 20px;
+    background-color: grey;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 3em;
+}
+input {
+    width: 400px
+    
+}
 /* main containers */
 .left-col, .right-col {
-    margin: 20px;
+    margin: 20px 40px;
 }
 .left-col {
-    background-color: bisque;
     flex: 3;
 }
 
@@ -33,20 +48,43 @@
 /* boxes */
 .box {
     border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 /* box contents */
 .words-left {
-    padding: 20px;
+    padding: 10px 0px;
+    flex: 1;
+    flex-direction: column;
 }
 
 .words-left h2 {
     font-size: 2.5em;
 }
-.words-left > :nth-child(2) {
-    color: red;
-    text-align: center;
-}
+
 .words-left p {
     padding: 2px;
+}
+
+.words-right {
+    flex: 4;
+    flex-direction: column;
+}
+
+
+/* buttons */
+button {
+    margin: 10px 0px;
+    padding: 5px 20px;
+    background-color: rgb(251,217,103);
+    border: 2px solid black;
+    box-shadow: 2px 4px 2px;
+    cursor: pointer;
+}
+
+#login {
+    background-color: blue;
+    box-shadow: 2px 4px 2px black;
+    color: white;
+    font-size: 1em;
 }

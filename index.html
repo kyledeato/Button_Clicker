@@ -8,24 +8,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+    <nav class="display-flex  align-center">
         <h1>Dojonary</h1>
         <form action="">
-            <input type="text">
+            <input type="text" placeholder="Search">
         </form>
-        <button class="login">Login</button>
+        <button class="login" id="login">Login</button>
     </nav>
 
     <main class="display-flex ">
         <div class="left-col ">
             <section class="words box display-flex">
-                <div class="words-left">
+                <div class="words-left display-flex justify-center align-center">
                     <h2>ninja</h2>
-                    <p>noun</p>
-                    <p>Plural: ninjas</p>
-                    <button>13 likes</button>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="button-likes">13 likes</button>
                 </div>
-                <div class="words-right">
+                <div class="words-right display-flex justify-center align-center">
+                    <p>A practicitioner skilled in the <a href="#">Japanese</a>
+                        art of <a href="#">ninjutsu</a></p>
+                </div>
+            </section>
+            <section class="words box display-flex">
+                <div class="words-left display-flex justify-center align-center">
+                    <h2>ninja</h2>
+                    <p><em>noun</em></p>
+                    <p>Plural: <em>ninjas</em></p>
+                    <button class="button-likes">13 likes</button>
+                </div>
+                <div class="words-right display-flex justify-center align-center">
                     <p>A practicitioner skilled in the <a href="#">Japanese</a>
                         art of <a href="#">ninjutsu</a></p>
                 </div>
@@ -33,7 +45,8 @@
         </div>
         <aside class="right-col">
             <section class="box">
-                <h2>Dojonary</h2>
+                <h2>Dojonary is</h2>
+                <h2>defined by You</h2>
             </section>
         </aside>
     </main>
